@@ -23,7 +23,7 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
-          <a href="/files/Mariam-Hesham-CV.pdf" download="Mariam-Hesham-CV.pdf"
+          <a href="/files/Mariam Hesham-CV.pdf" download="Mariam-Hesham-CV.pdf"
             className="hover:scale-110 transition-all btn bg-primary text-white px-6 py-3 rounded-xl">
             <i className="fa-solid fa-arrow-down text-white me-2"></i>
             Download CV
