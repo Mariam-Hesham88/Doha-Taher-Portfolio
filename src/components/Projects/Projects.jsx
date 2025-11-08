@@ -189,7 +189,7 @@ const projects = [
         <Slider {...settings}>
           {projects.map((project) => (
             <div className="p-5">
-              <div key={project.id} className="item bg-secondary h-[650px] md:h-[550px] rounded-2xl shadow-md">
+              <div key={project.id} className="item bg-secondary h-[700px] md:h-[600px] rounded-2xl shadow-md">
                 <img src={project.imgSrc} alt={project.title} className='w-full rounded-t-2xl' />
                 <div className="p-6">
                   <h2 className='text-smothText font-semibold text-[20px] md:text-[24px] text-center'>
