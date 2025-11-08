@@ -15,9 +15,9 @@ const projects = [
   {
     id: 11,
     imgSrc: shopCo,
-    title: 'Shop.co E-commerce',
+    title: 'Shop.co',
     description:
-      'A fully functional e-commerce website built using React.js. It features product listings, product details pages, dynamic filtering, cart and checkout functionality. APIs are integrated using Axios, and forms are handled with Formik and Yup for validation. The design uses TailwindCSS for a fully responsive, clean interface. React Router enables smooth navigation between pages, while Context API manages global cart state efficiently.',
+      'A complete React e-commerce app with product pages, cart, and checkout. Uses Axios for APIs, Formik & Yup for validation, and TailwindCSS for a clean, responsive design.',
     technology: [
       'React.JS',
       'React Router',
@@ -26,7 +26,6 @@ const projects = [
       'Yup',
       'TailwindCSS',
       'Context API',
-      'Responsive UI',
       'Vercel Deployment'
     ],
     gitHubUrl: 'https://github.com/Mariam-Hesham88/React.js-Ecommerce',
@@ -37,14 +36,13 @@ const projects = [
     imgSrc: taskManagement,
     title: 'Task Management',
     description:
-      'A modern task management app that helps users create, edit, and organize tasks efficiently. It supports status tracking, task filtering, and persistent data via APIs. Developed with React.js and Axios, using TailwindCSS for responsive styling. State management is handled with Context API, and React Router provides smooth page transitions.',
+      'A React task management app to add, edit, and organize tasks. Built with Axios, TailwindCSS, and Context API for state handling and smooth navigation.',
     technology: [
       'React.JS',
       'Axios',
       'TailwindCSS',
       'React Router',
       'Context API',
-      'Responsive UI',
       'Vercel Deployment'
     ],
     gitHubUrl: 'https://github.com/Mariam-Hesham88/Task-Management',
@@ -55,7 +53,7 @@ const projects = [
     imgSrc: note,
     title: 'Note App',
     description:
-      'A simple yet powerful note-taking app that allows users to add, edit, and delete notes easily. Built with React.js and integrated with an API using Axios. Forms are validated using Formik and Yup. TailwindCSS ensures a modern and fully responsive design, while Context API manages note state globally across the app.',
+      'A simple React note app for adding, editing, and deleting notes. Uses Axios for APIs, Formik & Yup for validation, and TailwindCSS for a modern responsive design.',
     technology: [
       'React.JS',
       'Axios',
@@ -63,7 +61,6 @@ const projects = [
       'Yup',
       'TailwindCSS',
       'Context API',
-      'Responsive UI',
       'React Hooks'
     ],
     gitHubUrl: 'https://github.com/Mariam-Hesham88/React-Note-App',
@@ -72,16 +69,15 @@ const projects = [
   {
     id: 14,
     imgSrc: allOnOne,
-    title: 'All-On-One E-commerce',
+    title: 'All-On-One',
     description:
-      'An advanced e-commerce project developed using Angular 17. It includes product pages, cart management, search, and category filtering. Uses RxJS for state management and Observables, Bootstrap for responsive design, and RESTful APIs for fetching dynamic product data. Deployed using Netlify for fast and secure hosting.',
+      'An Angular 17 e-commerce app with cart, product filtering, and search. Uses RxJS, Bootstrap, and RESTful APIs for smooth data handling and responsive UI.',
     technology: [
       'Angular 17',
       'TypeScript',
       'RxJS',
       'Bootstrap',
       'RESTful APIs',
-      'Responsive UI',
       'Netlify Deployment'
     ],
     gitHubUrl: 'https://github.com/Mariam-Hesham88/E-commerce-Angular',
@@ -92,15 +88,14 @@ const projects = [
     imgSrc: smartLogin,
     title: 'Login System',
     description:
-      'A lightweight login and registration system using HTML, CSS, Bootstrap, and Vanilla JavaScript. Includes client-side validation, password matching, and persistent storage through LocalStorage. This project demonstrates understanding of user authentication logic and front-end validation best practices.',
+      'A simple login and signup system using HTML, CSS, and JavaScript with form validation and LocalStorage for saving user data.',
     technology: [
       'HTML',
       'CSS',
       'Bootstrap',
       'JavaScript',
       'LocalStorage',
-      'Client-side Validation',
-      'Responsive Design'
+      'Validation'
     ],
     gitHubUrl: 'https://github.com/Mariam-Hesham88/Login-System',
     liveDemo: 'https://mariam-hesham88.github.io/Login-System/signup.html',
@@ -110,14 +105,13 @@ const projects = [
     imgSrc: todolist,
     title: 'ToDo List',
     description:
-      'A classic ToDo List app where users can add, update, and delete tasks. Built with HTML, CSS, Bootstrap, and JavaScript. Focuses on CRUD operations and DOM manipulation. The layout is fully responsive and simple for daily use.',
+      'A classic ToDo app to add, edit, and delete tasks. Built with HTML, CSS, and JavaScript focusing on CRUD operations and responsive design.',
     technology: [
       'HTML',
       'CSS',
       'Bootstrap',
       'JavaScript',
-      'DOM Manipulation',
-      'Responsive UI'
+      'DOM Manipulation'
     ],
     gitHubUrl: 'https://github.com/Mariam-Hesham88/Todo-List',
     liveDemo: 'https://mariam-hesham88.github.io/Todo-List/',
@@ -127,24 +121,21 @@ const projects = [
     imgSrc: random,
     title: 'Random Quote',
     description:
-      'An interactive Random Quote Generator that displays a new inspirational quote each time the button is clicked. Developed using HTML, CSS, and JavaScript. Includes dynamic DOM updates and a smooth responsive design for both desktop and mobile.',
+      'A simple Random Quote Generator using HTML, CSS, and JavaScript. Displays new quotes dynamically with smooth transitions and responsive layout.',
     technology: [
       'HTML',
       'CSS',
       'JavaScript',
-      'DOM Manipulation',
-      'Responsive UI'
+      'DOM Manipulation'
     ],
     gitHubUrl: 'https://github.com/Mariam-Hesham88/Quote-App',
     liveDemo: 'https://mariam-hesham88.github.io/Quote-App/',
   },
 ];
 
-
   function NextArrow({ onClick }) {
     return (
-      <div
-        onClick={onClick}
+      <div onClick={onClick}
         className="absolute top-1/2 right-[-50px] md:right-[-80px] transform -translate-y-1/2 z-10 cursor-pointer 
                  bg-primary text-white w-12 h-12 flex items-center justify-center rounded-full 
                  shadow-lg hover:scale-110 transition-all duration-300">
@@ -167,7 +158,7 @@ const projects = [
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -190,7 +181,7 @@ const projects = [
 
   return (
     <section className='w-[90%] mx-auto p-12 flex flex-wrap justify-center relative'>
-      <h1 className='secondTitle w-full text-primary text-center font-bold py-8'>
+      <h1 className='secondTitle w-full text-primary text-center font-bold pb-8'>
         Featured Projects
       </h1>
 
@@ -198,13 +189,13 @@ const projects = [
         <Slider {...settings}>
           {projects.map((project) => (
             <div className="p-5">
-              <div key={project.id} className="item bg-secondary rounded-2xl shadow-md">
+              <div key={project.id} className="item bg-secondary h-[650px] md:h-[550px] rounded-2xl shadow-md">
                 <img src={project.imgSrc} alt={project.title} className='w-full rounded-t-2xl' />
                 <div className="p-6">
-                  <h2 className='text-smothText font-semibold text-[24px] text-center'>
+                  <h2 className='text-smothText font-semibold text-[20px] md:text-[24px] text-center'>
                     {project.title}
                   </h2>
-                  <p className='text-gray-600 text-center py-2'>{project.description}</p>
+                  <p className='text-gray-600 text-[14px] md:text-[16px] text-center py-2'>{project.description}</p>
                   <div className="flex flex-wrap justify-center py-2 gap-2">
                     {project.technology.map((tec, index) => (
                       <span key={index} className='bg-primary text-white rounded-lg py-1 px-3 text-sm hover:scale-110 transition-all duration-300'>
@@ -227,7 +218,7 @@ const projects = [
         </Slider>
       </div>
 
-      <div className='w-full flex justify-center pt-10'>
+      <div className='w-full flex justify-center'>
         <a href='https://github.com/Mariam-Hesham88?tab=repositories' target='_blank' className='btn capitalize text-white bg-primary'>
           View All Projects
         </a>

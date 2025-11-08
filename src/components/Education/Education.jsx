@@ -33,10 +33,10 @@ export default function Education() {
       </div>
 
       <div className="w-full md:w-2/3 p-12 border-s-2 border-smothText">
-        <h1 className='secondTitle text-primary font-bold pt-5 pb-12'>Education</h1>
+        <h1 className='secondTitle text-primary font-bold pt-2 pb-8'>Education</h1>
 
         {education.map((edu, i) => (
-          <div key={edu.id} className="relative mb-6">
+          <div key={edu.id} className="relative mb-4">
             <span className='absolute icon -translate-x-1/2 translate-y-1/2'>
               <i className="fa-solid fa-graduation-cap bg-background p-2 text-smothText text-[38px]"></i>
             </span>

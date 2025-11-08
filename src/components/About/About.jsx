@@ -43,7 +43,7 @@ export default function About() {
 
 
       </div>
-        <div className="">
+        <div className=" w-full">
           <ul className="text-primary font-semibold flex flex-col flex-wrap md:flex-row justify-center items-center gap-2 md:space-x-8 rtl:space-x-reverse">
             <li>
               <a href="https://wa.me/201066135369" target='_blank' className="block capitalize rounded-sm  md:border- md:p-0">

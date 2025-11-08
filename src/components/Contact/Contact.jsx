@@ -5,7 +5,7 @@ export default function Contact() {
   return <>
     <section className='flex flex-wrap justify-center py-12'>
       <h1 className='secondTitle w-full text-center text-primary font-bold py-8'>Contact Me</h1>
-      <div className='w-[50%]'>
+      <div className='w-[90%] md:w-[50%] '>
         <h1 className='text-[28px] font-semibold text-smothText capitalize'>Contact information:</h1>
         <p className='text-smothText leading-8'>Feel free to reach out if you're looking for a developer, or have any questions.</p>
         <div className='flex flex-wrap gap-4'>
@@ -26,7 +26,7 @@ export default function Contact() {
         </div>
         <p className='capitalize pb-0 pt-8 md:pb-2 text-[18px] font-semibold'> Follow me </p>
         <div className="">
-          <ul className="font-medium text-[28px] text-primary flex flex-row flex-wrap items-center p-4 ps-0 md:p-0  md:space-x-8 rtl:space-x-reverse">
+          <ul className="font-medium text-[28px] text-primary flex flex-row flex-wrap items-center ps-0 md:p-0  md:space-x-8 rtl:space-x-reverse">
             <li>
               <a href="https://www.linkedin.com/in/mariam-hesham-88m/" target='_blank' className="block capitalize py-1 pe-1 rounded-sm  md:border-0 hover:scale-125 transition-all duration-[.5s] md:p-0">
                 <i className="fa-brands fa-square-linkedin"></i>
