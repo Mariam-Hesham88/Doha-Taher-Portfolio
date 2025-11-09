@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import style from './Navbar.module.css'
+import doc from '../../assets/files/Mariam-Hesham-CV.pdf'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +79,7 @@ export default function Navbar() {
             </li>
             <li>
               <button className='btn text-primary bg-background'>
-                <a href="/Mariam-Hesham-CV.pdf" download="Mariam-Hesham-CV.pdf">
+                <a href={doc} download="Mariam-Hesham-CV.pdf">
                   Download CV
                 </a>
               </button>

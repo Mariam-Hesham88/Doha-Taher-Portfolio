@@ -185,7 +185,7 @@ const projects = [
         Featured Projects
       </h1>
 
-      <div className="cards w-full sm:w-[80%] md:w-[60%] lg:w-[50%] relative">
+      <div className="cards w-full sm:w-[80%] md:w-[70%] lg:w-[60%] relative">
         <Slider {...settings}>
           {projects.map((project) => (
             <div className="p-5">
