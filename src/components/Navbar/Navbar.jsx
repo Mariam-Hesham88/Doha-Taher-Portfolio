@@ -9,13 +9,13 @@ export default function Navbar() {
   const sections = ["home", "about", "education", "skills", "projects", "contact"];
 
   return <>
-    <nav className="bg-primary border-gray-200 px-10 fixed top-0 right-0 left-0 z-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-center lg:justify-between py-3">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-10 border-gray-200 bg-primary">
+      <div className="flex flex-wrap items-center justify-center max-w-screen-xl py-3 lg:justify-between">
 
         <button
           onClick={() => setIsOpen(!isOpen)}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-white">
+          className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-white rounded-lg md:hidden hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-white">
           <svg
             className="w-6 h-6"
             aria-hidden="true"
@@ -34,7 +34,7 @@ export default function Navbar() {
         </button>
 
         <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}>
-          <ul className="font-medium me-auto flex flex-col p-2 md:p-0 md:flex-row md:space-x-8">
+          <ul className="flex flex-col p-2 font-medium me-auto md:p-0 md:flex-row md:space-x-8">
             {sections.map((section, index) => (
               <li key={index}>
                 <Link
@@ -44,7 +44,7 @@ export default function Navbar() {
                   offset={-100}
                   duration={300}
                   onClick={handleCloseMenu}
-                  className="block text-white capitalize py-2 px-3 rounded-sm cursor-pointer hover:text-background transition-all duration-300"
+                  className="block px-3 py-2 text-white capitalize transition-all duration-300 rounded-sm cursor-pointer hover:text-background"
                 >
                   {section === "home" ? "Home" : section}
                 </Link>
@@ -54,32 +54,36 @@ export default function Navbar() {
         </div>
 
         <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto pt-2 lg:pt-0`} id="navbar-default">
-          <ul className="font-medium flex flex-row flex-wrap items-center p-4 pe-0 md:p-0 md:space-x-8 rtl:space-x-reverse">
+          <ul className="flex flex-row flex-wrap items-center p-4 font-medium text-white pe-0 md:p-0 md:space-x-8 rtl:space-x-reverse">
             <li>
-              <a href="https://wa.me/201066135369" target='_blank' className="block py-2 px-3 rounded-sm  md:border-0 hover:scale-125 transition-all duration-[.5s] md:p-0">
-                <i className="fa-brands fa-whatsapp text-white text-[18px]"></i>
+              <a href="https://wa.me/201066135369" target='_blank' className="block capitalize rounded-sm md:border- md:p-0">
+                <i className="fa-brands fa-whatsapp text-[18px]"></i>
               </a>
             </li>
             <li>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mariam.hesham.ramadam@gmail.com" target="_blank" rel="noreferrer"
-                className="block capitalize py-2 px-3 rounded-sm  md:border-0 hover:scale-125 transition-all duration-[.5s] md:p-0">
-                <i className="fa-regular fa-envelope text-white text-[18px]"></i>
+              <a href="https://www.behance.net/dohataher2" target='_blank' className="block capitalize rounded-sm md:border-0 md:p-0">
+                <i className="fa-brands fa-behance text-[18px]"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/mariam-hesham-88m/" target='_blank' className="block capitalize py-2 px-3 rounded-sm  md:border-0 hover:scale-125 transition-all duration-[.5s] md:p-0">
-                <i className="fa-brands fa-square-linkedin text-white text-[18px]"></i>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=doha321taher@gmail.com" target="_blank" rel="noreferrer" className="block capitalize rounded-sm md:border-0 md:p-0">
+                <i className="fa-regular fa-envelope text-[18px]"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/Mariam-Hesham88" target='_blank' className="block capitalize py-2 px-3 rounded-sm  md:border-0 hover:scale-125 transition-all duration-[.5s] md:p-0">
-                <i className="fa-brands fa-github text-white text-[18px]"></i>
+              <a href="https://www.linkedin.com/in/doha-taher-5a9b3231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className="block capitalize rounded-sm md:border-0 md:p-0">
+                <i className="fa-brands fa-square-linkedin text-[18px]"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Doha-2" target='_blank' className="block capitalize rounded-sm md:border-0 md:p-0">
+                <i className="fa-brands fa-github text-[18px]"></i>
               </a>
             </li>
             <li>
               <button className='btn text-primary bg-background'>
-                <a href={`/Mariam-Hesham-CV.pdf`} target='_blank' fileName="Mariam-Hesham-CV.pdf">
-                  View CV
+                <a href='https://drive.google.com/drive/folders/1VMHPGLFBTnClicS04nPxwlTSk2Ioy-za?usp=sharing' target='_blank'>
+                 <i className="fa-solid fa-arrow-up-right-from-square"></i> View Behance
                 </a>
               </button>
             </li>

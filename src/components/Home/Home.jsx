@@ -1,50 +1,57 @@
-import React from 'react'
-import style from './Home.module.css'
-import mariam from '../../assets/images/mariam1.png'
+import React from "react";
+import style from "./Home.module.css";
+import doha from "../../assets/images/doha1.png";
 
 export default function Home() {
   return (
-    <section className="flex flex-col-reverse items-center justify-center w-full min-h-screen px-6 py-20 md:flex-row md:px-12 md:py-0">
+    <section className="flex flex-col items-center justify-center w-full min-h-screen px-6 py-20 md:flex-row md:px-12 md:py-0">
 
-      <div className="w-full mt-10 text-center md:w-1/2 md:text-left md:mt-0">
-        <h1 className="pb-5 text-3xl font-bold mainTitle sm:text-4xl md:text-5xl">
-          Hey! I'm Mariam <span className="wave">👋</span>
+      {/* IMAGE ALWAYS FIRST */}
+      <div className="flex items-center justify-center order-1 w-full mb-10 md:w-1/2 md:mb-0">
+        <div className="rounded-full bg-background max-w-[300px] sm:max-w-[350px] md:max-w-full">
+          <img src={doha} alt="Doha" className="w-full h-auto" />
+        </div>
+      </div>
+
+      {/* TEXT ALWAYS SECOND */}
+      <div className="order-2 w-full px-10 mt-10 text-center md:w-1/2 md:text-left md:mt-0">
+        
+        <h1 className="p-3 pb-5 text-3xl font-bold text-center text-white bg-secondary shape1 mainTitle sm:text-4xl md:text-5xl">
+          Hey! I'm Doha <span className="wave">👋</span>
         </h1>
 
-        <h3 className="text-primary text-2xl sm:text-3xl md:text-[32px] font-semibold">
-          Frontend Developer
-        </h3>
-
-        <p className="pt-4 pb-5 text-sm leading-7 paragraph sm:text-base slideInLeft">
-          A passionate Frontend Developer who loves developing modern, responsive,
-          and user-friendly web applications. I enjoy learning new technologies and
-          bringing creative ideas to life using
-          <span className="font-medium text-primary"> Angular, React.JS, Next.JS</span> and modern web tools.
-        </p>
+        <div className="p-5 my-2 text-sm leading-7 md:my-8 shape2 bg-secondary paragraph sm:text-base slideInRight">
+          <h3 className="text-white text-center text-2xl sm:text-3xl md:text-[32px] font-semibold mb-2">
+            UI/UX Designer
+          </h3>
+          <p className="text-center text-white md:text-left">
+            I design clean, modern, and user-friendly mobile apps and responsive
+            websites that work smoothly on all devices.
+          </p>
+        </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:justify-start">
           <a
-            target='_blank'
-            href='https://drive.google.com/drive/u/0/folders/13ZS75_XMliP_uREfpor7LvpSpveh8VOd'
-            fileName="Mariam-Hesham-CV.pdf"
-            className="inline-flex items-center px-6 py-3 text-white transition-all hover:scale-110 bg-primary rounded-xl">
+            target="_blank"
+            href="https://drive.google.com/drive/folders/1VMHPGLFBTnClicS04nPxwlTSk2Ioy-za?usp=sharing"
+            className="flex items-center gap-2 px-6 py-3 text-white transition-all hover:scale-110 bg-primary rounded-xl"
+          >
+            <i className="fa-solid fa-eye text-[18px] pe-2"></i>
             View CV
           </a>
 
-          <a href="https://wa.me/201066135369" target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 transition-all border hover:scale-110 btn bg-background border-primary text-primary rounded-xl">
+          <a
+            href="https://wa.me/201001967368"
+            target="_blank"
+            className="flex items-center gap-2 px-6 py-3 transition-all border hover:scale-110 btn bg-background border-primary text-primary rounded-xl"
+          >
             <i className="fa-brands fa-whatsapp text-primary text-[18px]"></i>
             WhatsApp
           </a>
         </div>
+
       </div>
 
-      <div className="flex items-center justify-center w-full mb-10 md:w-1/2 md:mb-0">
-        <div className="shape bg-primary">
-          <img src={mariam} alt="Mariam" className='w-full' />
-        </div>
-      </div>
     </section>
-  )
+  );
 }
-
