@@ -32,7 +32,7 @@ let softSkills = [
 
 export default function Skills() {
   return <>
-    <section className="flex flex-wrap justify-center min-h-screen p-12">
+    <section className="flex flex-wrap justify-center min-h-screen p-12 pe-0">
       <h1 className="w-full py-8 font-bold text-center secondTitle text-primary">
         Skills
       </h1>

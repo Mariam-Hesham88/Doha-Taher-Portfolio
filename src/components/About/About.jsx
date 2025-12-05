@@ -32,13 +32,13 @@ export default function About() {
         <div className="flex flex-col items-center gap-10 md:flex-row md:justify-center md:items-start">
 
           {/* LEFT SIDE — TEXT */}
-          <div className="w-full px-5 md:w-2/3">
+          <div className="w-full px-0 md:w-2/3">
             <h1 className="w-full md:w-[70%] py-6 font-bold text-white rounded-e-[50px] secondTitle text-center md:text-end pe-0 md:pe-12 bg-secondary text-3xl md:text-4xl">
               About Me
             </h1>
 
             <p
-              className={`leading-7 p-6 sm:p-10 md:p-24 text-black paragraph ${style.fadeInUp}`}
+              className={`leading-[38px] text-[28px] p-6 sm:p-10 md:p-12 md:px-24 text-black ${style.fadeInUp}`}
             >
               Hi My Name is{" "}
               <span className="font-semibold text-primary">Doha Taher 🌸</span>A

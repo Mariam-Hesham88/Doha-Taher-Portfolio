@@ -16,21 +16,21 @@ export default function Home() {
       {/* TEXT ALWAYS SECOND */}
       <div className="order-2 w-full px-10 mt-10 text-center md:w-1/2 md:text-left md:mt-0">
         
-        <h1 className="p-3 pb-5 text-3xl font-bold text-center text-white bg-secondary shape1 mainTitle sm:text-4xl md:text-5xl">
+        <h1 className="p-3 py-8 pb-5 text-3xl font-bold text-center text-white bg-secondary shape1 mainTitle sm:text-4xl md:text-5xl">
           Hey! I'm Doha <span className="wave">👋</span>
         </h1>
 
-        <div className="p-5 my-2 text-sm leading-7 md:my-8 shape2 bg-secondary paragraph sm:text-base slideInRight">
-          <h3 className="text-white text-center text-2xl sm:text-3xl md:text-[32px] font-semibold mb-2">
+        <div className="p-5 py-8 my-2 text-sm leading-7 md:mt-12 md:mb-4 shape2 bg-secondary paragraph sm:text-base slideInRight">
+          <h3 className="text-white text-center text-2xl sm:text-3xl md:text-[38px] font-semibold mb-2">
             UI/UX Designer
           </h3>
-          <p className="text-center text-white md:text-left">
+          <p className="text-center text-[22px] text-black">
             I design clean, modern, and user-friendly mobile apps and responsive
             websites that work smoothly on all devices.
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 md:justify-start">
+        <div className="flex flex-wrap justify-center gap-4">
           <a
             target="_blank"
             href="https://drive.google.com/drive/folders/1VMHPGLFBTnClicS04nPxwlTSk2Ioy-za?usp=sharing"

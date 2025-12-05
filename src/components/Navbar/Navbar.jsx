@@ -54,7 +54,8 @@ export default function Navbar() {
         </div>
 
         <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto pt-2 lg:pt-0`} id="navbar-default">
-          <ul className="flex flex-row flex-wrap items-center p-4 font-medium text-white pe-0 md:p-0 md:space-x-8 rtl:space-x-reverse">
+          <ul className="flex flex-row flex-wrap items-center gap-4 p-4 font-medium text-white pe-0 md:p-0 md:gap-0 md:space-x-8 rtl:space-x-reverse">
+
             <li>
               <a href="https://wa.me/201066135369" target='_blank' className="block capitalize rounded-sm md:border- md:p-0">
                 <i className="fa-brands fa-whatsapp text-[18px]"></i>
