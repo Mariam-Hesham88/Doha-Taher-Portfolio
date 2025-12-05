@@ -1,15 +1,16 @@
 import React from 'react'
 import chashly from '../../assets/images/cashly.jpg';
-import echose from '../../assets/images/echos.jpg';
+import echoes from '../../assets/images/echoes.jpg';
 import mariam from '../../assets/images/mariam.jpg';
 import yoga from '../../assets/images/yoga.jpg';
+import yumgo from '../../assets/images/yumgo.jpg';
 
 
 export default function Projects() {
 
 const projects = [
   {
-    id: 12,
+    id: 11,
     imgSrc: chashly,
     title: 'CA$HLY',
     description:
@@ -18,7 +19,7 @@ const projects = [
     prototype: "https://embed.figma.com/proto/dy2qNHybqq2EvBaTg1Aood/Cashly?node-id=76-1661&starting-point-node-id=68%3A3031&embed-host=share",
   },
   {
-    id: 13,
+    id: 12,
     imgSrc: mariam,
     title: 'Mariam portfolio',
     description:
@@ -27,7 +28,7 @@ const projects = [
     prototype: ' https://mariam-hesham-portfolio.vercel.app/',
   },
   {
-    id: 14,
+    id: 13,
     imgSrc: yoga,
     title: 'World Of Yoga',
     description:
@@ -36,11 +37,18 @@ const projects = [
     prototype: 'https://www.behance.net/gallery/235313857/landing-page',
   },
     {
-    id: 11,
-    imgSrc: echose,
+    id: 14,
+    imgSrc: yumgo,
+    title: 'YumGo',
+    description: '“A simple and easy-to-use food delivery app that lets users choose a restaurant, order their meal, and track the delivery until it arrives.”',
+    caseStudy: 'https://www.behance.net/gallery/239711471/Echoes-of-History',
+    prototype: "https://embed.figma.com/proto/LwtOpFrAG5lUErdYIpBgC2/Echoes-of-History?node-id=24-3403&starting-point-node-id=24%3A3380&embed-host=share",
+  },
+    {
+    id: 15,
+    imgSrc: echoes,
     title: 'Echoes of History',
-    description:
-      'A mobile app that helps visitors discover historical artifacts by searching or scanning a statue to instantly watch a short storytelling video, with suggestions for similar pieces.while Admins manage news and content in the app and still have full access to the user features.',
+    description:'A mobile app where users discover artifacts by searching or scanning, while admins manage news and content with full user access.',
     caseStudy: 'https://www.behance.net/gallery/239711471/Echoes-of-History',
     prototype: "https://embed.figma.com/proto/LwtOpFrAG5lUErdYIpBgC2/Echoes-of-History?node-id=24-3403&starting-point-node-id=24%3A3380&embed-host=share",
   },
@@ -62,10 +70,10 @@ const projects = [
                   <p className='text-secondary text-[14px] md:text-[16px] text-center py-2'>{project.description}</p>
                   
                   <div className="flex justify-center gap-6 pt-3">
-                    <a href={project.gitHubUrl} target='_blank' className="transition-all duration-300 text-secondary hover:scale-125">
+                    <a href={project.caseStudy} target='_blank' className="transition-all duration-300 text-secondary hover:scale-125">
                       <i className="fa-brands fa-square-behance text-[22px] text-primary"></i> View Case Study
                     </a>
-                    <a href={project.liveDemo} target='_blank' className="transition-all duration-300 text-secondary hover:scale-125">
+                    <a href={project.prototype} target='_blank' className="transition-all duration-300 text-secondary hover:scale-125">
                       <i className="fa-regular fa-circle-play text-[22px] text-primary"></i> Try Prototype
                     </a>
                   </div>

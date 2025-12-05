@@ -83,7 +83,7 @@ export default function Navbar() {
             </li>
             <li>
               <button className='btn text-primary bg-background'>
-                <a href='https://drive.google.com/drive/folders/1VMHPGLFBTnClicS04nPxwlTSk2Ioy-za?usp=sharing' target='_blank'>
+                <a href='https://www.behance.net/dohataher2' target='_blank'>
                  <i className="fa-solid fa-arrow-up-right-from-square"></i> View Behance
                 </a>
               </button>

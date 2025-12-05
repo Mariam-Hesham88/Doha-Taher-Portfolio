@@ -21,7 +21,7 @@ export default function Home() {
         </h1>
 
         <div className="p-5 py-8 my-2 text-sm leading-7 md:mt-12 md:mb-4 shape2 bg-secondary paragraph sm:text-base slideInRight">
-          <h3 className="text-white text-center text-2xl sm:text-3xl md:text-[38px] font-semibold mb-2">
+          <h3 className="text-white text-center text-2xl sm:text-3xl md:text-[38px] mb-2">
             UI/UX Designer
           </h3>
           <p className="text-center text-[22px] text-black">
