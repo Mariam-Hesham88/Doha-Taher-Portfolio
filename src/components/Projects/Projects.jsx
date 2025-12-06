@@ -41,8 +41,8 @@ const projects = [
     imgSrc: yumgo,
     title: 'YumGo',
     description: '“A simple and easy-to-use food delivery app that lets users choose a restaurant, order their meal, and track the delivery until it arrives.”',
-    caseStudy: 'https://www.behance.net/gallery/239711471/Echoes-of-History',
-    prototype: "https://embed.figma.com/proto/LwtOpFrAG5lUErdYIpBgC2/Echoes-of-History?node-id=24-3403&starting-point-node-id=24%3A3380&embed-host=share",
+    caseStudy: '',
+    prototype: '',
   },
     {
     id: 15,
