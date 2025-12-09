@@ -57,7 +57,7 @@ export default function Navbar() {
           <ul className="flex flex-row flex-wrap items-center gap-4 p-4 font-medium text-white pe-0 md:p-0 md:gap-0 md:space-x-8 rtl:space-x-reverse">
 
             <li>
-              <a href="https://wa.me/201066135369" target='_blank' className="block capitalize rounded-sm md:border- md:p-0">
+              <a href="https://wa.me/201001967368" target='_blank' className="block capitalize rounded-sm md:border- md:p-0">
                 <i className="fa-brands fa-whatsapp text-[18px]"></i>
               </a>
             </li>

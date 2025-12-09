@@ -39,7 +39,7 @@ export default function Contact() {
                 <i className="fa fa-phone text-primary text-[22px]"></i>
               </span>
                 <p className="text-[22px] text-primary pt-2">Phone</p>
-                <p className="text-[16px] text-white"> +201066135369</p>
+                <p className="text-[16px] text-white"> +201001967368</p>
               </div>
             </div>
             <p className="capitalize pb-0 pt-8 md:pb-2 text-primary text-[18px] font-semibold">
